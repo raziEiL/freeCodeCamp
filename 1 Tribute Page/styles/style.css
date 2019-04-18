@@ -1,0 +1,45 @@
+body {
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+#main {
+    background: #EEEEEE;
+    padding: 15px 10px;
+    margin: 25px 5px;
+    border-radius: 10px;
+}
+
+#img-div {
+    background: #FFF;
+    padding-bottom: 5px;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+}
+
+#tribute-info ul {
+    text-align: left;
+    max-width: 600px;
+    margin: 50px auto 0 auto;
+}
+
+#tribute-info li {
+    margin: 10px 0;
+}
+
+.footer {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.footer>p {
+    font-size: 14px;
+    margin: 0;
+    padding-top: 7px;
+}

@@ -1,0 +1,134 @@
+body {
+    background: linear-gradient(0deg,
+        #CDFFCC,
+        #CCFFFF);
+    font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+#main {
+    background-color: white;
+    width: 75%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+#title, #description {
+    text-align: center;
+}
+
+#survey-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#survey-form>div {
+    width: 45%;
+    margin: 5px 8px 20px 8px;
+}
+
+.leftSide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+}
+
+.leftSideNoAlign {
+    align-items: baseline;
+}
+
+ul {
+    list-style: none;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#dropdownFcc, #dropdown, #name, #email, #number, #comment {
+    height: 30px;
+    width: 70%;
+    border: 1px solid #c0c0c0;
+    padding: 1px 5px;
+}
+
+#dropdownFcc, #dropdown {
+    width: 50%;
+}
+
+#comment {
+    resize: vertical;
+    height: 80px;
+}
+
+#sumbitButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0 !important;
+}
+
+#submit {
+    border: 0px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px;
+    width: 96px;
+    background: hsl(119, 60%, 50%);
+    color: white;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer>hr {
+    width: 90%;
+    color: red;
+    background: red;
+}
+
+.footer>p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.author-link {
+    color: black;
+    text-decoration: underline;
+}
+
+.author-link:hover, .author-link:visited {
+    color: black;
+}
+
+@media (max-width: 870px) {
+
+    .leftSide {
+        display: block;
+        text-align: left
+    }
+
+    #survey-form>div {
+        width: 70%;
+        margin: 5px auto 10px auto;
+    }
+
+    #dropdownFcc, #dropdown, #name, #email, #number, #comment {
+        width: 100%;
+        padding: 1px 1px;
+    }
+
+    #dropdownFcc, #dropdown {
+        width: 60%;
+    }
+
+    #survey-form>div:nth-child(2n) {
+        margin-bottom: 20px;
+    }
+}

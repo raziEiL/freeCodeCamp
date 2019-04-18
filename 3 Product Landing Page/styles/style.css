@@ -1,0 +1,271 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #EEEEEE;
+}
+
+/* ----------- HEADR ----------- */
+#header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    height: 80px;
+    top: 0;
+    padding: 0 2%;
+    background: #EEEEEE;
+}
+
+#header>div {
+    width: 60%;
+}
+
+#header-img {
+    margin-top: 2px;
+    width: 300px;
+}
+
+#nav-bar {
+    width: 40%;
+    max-width: 500px;
+}
+
+#nav-bar>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nav-bar li {
+    padding: 0 5px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+/* ----------- MAIN: GET STARTED ----------- */
+main {
+    margin-top: 100px;
+}
+
+#get-started {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#get-started>h2 {
+    padding: 10px 0;
+}
+
+#email {
+    margin: 10px 0;
+    padding: 0 10px;
+    height: 24px;
+    width: 250px;
+}
+
+#submit {
+    margin: 5px 0 10px 0;
+    padding: 3px 10px;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+/* ----------- MAIN: FEATURES ----------- */
+#features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px auto;
+}
+
+.features-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.features-column-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%
+}
+
+.features-column-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    max-width: 800px;
+    padding-left: 10px;
+}
+
+/* ----------- MAIN: HOW IT WORKS ----------- */
+#how-it-works {
+    padding-bottom: 10px;
+}
+
+#how-it-works>iframe {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* ----------- MAIN: PRICING ----------- */
+#pricing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.price-box {
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 300px;
+    margin: 10px;
+}
+
+.price-box>div {
+    background: hsl(0, 0%, 87%);
+    padding: 15px 0;
+}
+
+.price-box>h2 {
+    padding: 15px 0;
+}
+
+.price-box>ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.price-box li {
+    padding-bottom: 5px;
+}
+
+.price-box>button {
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+/* ----------- FOOTER ----------- */
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    max-width: 980px;
+    height: 80px;
+    padding-right: 2%;
+    margin: 0 auto;
+    border-radius: 3px;
+    background: hsl(0, 0%, 87%);
+}
+
+#footer>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#footer li {
+    padding: 5px 12px;
+}
+
+#footer>p {
+    color: hsl(0, 0%, 40%);
+    font-size: 14px;
+}
+
+.author-link {
+    text-decoration: none;
+}
+
+.author-link:hover, .author-link:visited {
+    color: black;
+}
+
+
+/* ----------- GLOBAL STYLE ----------- */
+
+.btn-style {
+    border: 0;
+    border-radius: 3px;
+    background: hsl(48, 100%, 50%);
+    cursor: pointer;
+}
+
+.btn-style:hover {
+    animation-name: highlight;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes highlight {
+    100% {
+        background: orange;
+    }
+}
+
+/* fire icon width fix */
+i.fab {
+    padding: 0 11px;
+}
+
+i.fab, i.fas {
+    color: orange;
+}
+
+ul {
+    list-style: none;
+}
+
+/* way to offset the anchor from the height of the header */
+a.anchor-fix {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    #nav-bar {
+        width: auto;
+    }
+
+    #nav-bar>ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav-bar li {
+        padding: 0;
+    }
+
+    .features-column-1 {
+        display: none;
+    }
+
+    .features-column-2 {
+        padding-left: 0;
+        margin: 0 2%;
+        text-align: center;
+        width: 100%;
+    }
+}
