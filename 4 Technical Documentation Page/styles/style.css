@@ -74,11 +74,9 @@ body {
 }
 
 @media (max-width: 820px) {
-
     body {
         flex-direction: column;
     }
-
     #navbar {
         position: static;
         width: 100%;
@@ -87,21 +85,17 @@ body {
         background: white;
         z-index: 1;
     }
-
     .navbar__list {
         border-top: 1px solid gray;
         height: 156px;
     }
-
     .navbar__item {
         padding: 8px 0;
         text-align: center;
     }
-
     #main-doc {
         margin: 0;
     }
-
     .text {
         line-height: 1.2;
     }

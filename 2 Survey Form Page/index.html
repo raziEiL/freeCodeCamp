@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Survey Form</title>
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Medvedev Denis raziEiL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="html,css,freeCodeCamp">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
 
-    <body>
-        <h1 id="title">Survey Form</h1>
-        <div id="main">
-            <p id="description">Let us know how we can improve freeCodeCamp</p>
-            <form id="survey-form">
-                <div class="leftSide"><label for="name" id="name-label">* Name:</label></div>
-                <div><input autofocus required type="text" id="name" name="name" placeholder="Enter your name"></div>
-                <div class="leftSide"><label for="email" id="email-label">* Email:</label></div>
-                <div><input required type="email" id="email" name="email" placeholder="Enter your Email"></div>
-                <div class="leftSide"><label for="number" id="number-label">* Age:</label></div>
-                <div><input required type="number" id="number" name="number" min="1" max="120" placeholder="Enter your age"></div>
-                <div class="leftSide"><label for="dropdown">Which option best describes your current role?</label></div>
-                <div>
-                    <select id="dropdown" name="roleSelection">
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div id="main">
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+        <form id="survey-form">
+            <div class="leftSide"><label for="name" id="name-label">* Name:</label></div>
+            <div><input autofocus required type="text" id="name" name="name" placeholder="Enter your name"></div>
+            <div class="leftSide"><label for="email" id="email-label">* Email:</label></div>
+            <div><input required type="email" id="email" name="email" placeholder="Enter your Email"></div>
+            <div class="leftSide"><label for="number" id="number-label">* Age:</label></div>
+            <div><input required type="number" id="number" name="number" min="1" max="120" placeholder="Enter your age"></div>
+            <div class="leftSide"><label for="dropdown">Which option best describes your current role?</label></div>
+            <div>
+                <select id="dropdown" name="roleSelection">
                         <option disabled selected>Select an Option</option>
                         <option value="student">Student</option>
                         <option value="job">Full Time Job</option>
@@ -29,51 +33,51 @@
                         <option value="notToSay">Prefer not to say</option>
                         <option value="other">Other</option>
                     </select>
-                </div>
-                <div class="leftSide leftSideNoAlign"><label for="recommend">* How likely is that you would recommend<br>freeCodeCamp to a friend?</label></div>
-                <div>
-                    <ul id="recommend">
-                        <li><label><input type="radio" value="1" name="radio-buttons">Definitly</label></li>
-                        <li><label><input type="radio" value="2" name="radio-buttons">Maybe</label></li>
-                        <li><label><input type="radio" value="3" name="radio-buttons">Not sure</label></li>
-                    </ul>
-                </div>
-                <div class="leftSide"><label for="dropdownFcc">What do you like most in FCC:</label></div>
-                <div>
-                    <select id="dropdownFcc" name="fccSelection">
+            </div>
+            <div class="leftSide leftSideNoAlign"><label for="recommend">* How likely is that you would recommend<br>freeCodeCamp to a friend?</label></div>
+            <div>
+                <ul id="recommend">
+                    <li><label><input type="radio" value="1" name="radio-buttons">Definitly</label></li>
+                    <li><label><input type="radio" value="2" name="radio-buttons">Maybe</label></li>
+                    <li><label><input type="radio" value="3" name="radio-buttons">Not sure</label></li>
+                </ul>
+            </div>
+            <div class="leftSide"><label for="dropdownFcc">What do you like most in FCC:</label></div>
+            <div>
+                <select id="dropdownFcc" name="fccSelection">
                         <option disabled selected>Select an Option</option>
                         <option value="chellenges">Chellenges</option>
                         <option value="projects">Projects</option>
                         <option value="community">Community</option>
                         <option value="openSource">Open Source</option>
                     </select>
-                </div>
-                <div class="leftSide leftSideNoAlign"><label for="improvedThings"></label>Things that should be improved in the future
-                    <br>(Check all that apply):</div>
-                <div>
-                    <ul id="improvedThings">
-                        <li><label><input type="checkbox" value="1" name="Front-end Projects">Front-end Projects</label></li>
-                        <li><label><input type="checkbox" value="2" name="Back-end Projects">Back-end Projects</label></li>
-                        <li><label><input type="checkbox" value="3" name="Data Visualization">Data Visualization</label></li>
-                        <li><label><input type="checkbox" value="4" name="Challenges">Challenges</label></li>
-                        <li><label><input type="checkbox" value="5" name="Open Source Community">Open Source Community</label></li>
-                        <li><label><input type="checkbox" value="6" name="Gitter help rooms">Gitter help rooms</label></li>
-                        <li><label><input type="checkbox" value="7" name="Videos">Videos</label></li>
-                        <li><label><input type="checkbox" value="8" name="City Meetups">City Meetups</label></li>
-                        <li><label><input type="checkbox" value="9" name="Wiki">Wiki</label></li>
-                        <li><label><input type="checkbox" value="10" name="Forum">Forum</label></li>
-                        <li><label><input type="checkbox" value="11" name="Additional Courses">Additional Courses</label></li>
-                    </ul>
-                </div>
-                <div class="leftSide leftSideNoAlign"><label for="comment">Any Comments or Suggestions?</label></div>
-                <div><textarea name="commentArea" id="comment" placeholder="Enter your comment here..."></textarea></div>
-                <div id="sumbitButton"><button id="submit" type="sumbit">Sumbit</button></div>
-            </form>
-        </div>
-        <footer class="footer">
-            <p>Coded by <a class="author-link" href="https://www.freecodecamp.org/razieil" target="_blank">raziEiL</a> for <a class="author-link" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></p>
-        </footer>
-        <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
-    </body>
+            </div>
+            <div class="leftSide leftSideNoAlign"><label for="improvedThings"></label>Things that should be improved in the future
+                <br>(Check all that apply):</div>
+            <div>
+                <ul id="improvedThings">
+                    <li><label><input type="checkbox" value="1" name="Front-end Projects">Front-end Projects</label></li>
+                    <li><label><input type="checkbox" value="2" name="Back-end Projects">Back-end Projects</label></li>
+                    <li><label><input type="checkbox" value="3" name="Data Visualization">Data Visualization</label></li>
+                    <li><label><input type="checkbox" value="4" name="Challenges">Challenges</label></li>
+                    <li><label><input type="checkbox" value="5" name="Open Source Community">Open Source Community</label></li>
+                    <li><label><input type="checkbox" value="6" name="Gitter help rooms">Gitter help rooms</label></li>
+                    <li><label><input type="checkbox" value="7" name="Videos">Videos</label></li>
+                    <li><label><input type="checkbox" value="8" name="City Meetups">City Meetups</label></li>
+                    <li><label><input type="checkbox" value="9" name="Wiki">Wiki</label></li>
+                    <li><label><input type="checkbox" value="10" name="Forum">Forum</label></li>
+                    <li><label><input type="checkbox" value="11" name="Additional Courses">Additional Courses</label></li>
+                </ul>
+            </div>
+            <div class="leftSide leftSideNoAlign"><label for="comment">Any Comments or Suggestions?</label></div>
+            <div><textarea name="commentArea" id="comment" placeholder="Enter your comment here..."></textarea></div>
+            <div id="sumbitButton"><button id="submit" type="sumbit">Sumbit</button></div>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>Coded by <a class="author-link" href="https://www.freecodecamp.org/razieil" target="_blank">raziEiL</a> for <a class="author-link" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></p>
+    </footer>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
 
 </html>

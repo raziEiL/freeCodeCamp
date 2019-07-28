@@ -1,7 +1,5 @@
 body {
-    background: linear-gradient(0deg,
-        #CDFFCC,
-        #CCFFFF);
+    background: linear-gradient(0deg, #CDFFCC, #CCFFFF);
     font-family: 'Raleway', Helvetica, sans-serif;
 }
 
@@ -108,26 +106,21 @@ li {
 }
 
 @media (max-width: 870px) {
-
     .leftSide {
         display: block;
         text-align: left
     }
-
     #survey-form>div {
         width: 70%;
         margin: 5px auto 10px auto;
     }
-
     #dropdownFcc, #dropdown, #name, #email, #number, #comment {
         width: 100%;
         padding: 1px 1px;
     }
-
     #dropdownFcc, #dropdown {
         width: 60%;
     }
-
     #survey-form>div:nth-child(2n) {
         margin-bottom: 20px;
     }

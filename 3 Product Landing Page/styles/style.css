@@ -8,7 +8,9 @@ body {
     background: #EEEEEE;
 }
 
+
 /* ----------- HEADR ----------- */
+
 #header {
     position: fixed;
     display: flex;
@@ -51,7 +53,9 @@ body {
     color: black;
 }
 
+
 /* ----------- MAIN: GET STARTED ----------- */
+
 main {
     margin-top: 100px;
 }
@@ -82,7 +86,9 @@ main {
     font-size: 16px;
 }
 
+
 /* ----------- MAIN: FEATURES ----------- */
+
 #features {
     display: flex;
     flex-direction: row;
@@ -114,7 +120,9 @@ main {
     padding-left: 10px;
 }
 
+
 /* ----------- MAIN: HOW IT WORKS ----------- */
+
 #how-it-works {
     padding-bottom: 10px;
 }
@@ -125,7 +133,9 @@ main {
     margin: auto;
 }
 
+
 /* ----------- MAIN: PRICING ----------- */
+
 #pricing {
     display: flex;
     justify-content: center;
@@ -165,7 +175,9 @@ main {
     padding: 10px 15px;
 }
 
+
 /* ----------- FOOTER ----------- */
+
 #footer {
     display: flex;
     flex-direction: column;
@@ -223,7 +235,9 @@ main {
     }
 }
 
+
 /* fire icon width fix */
+
 i.fab {
     padding: 0 11px;
 }
@@ -236,7 +250,9 @@ ul {
     list-style: none;
 }
 
+
 /* way to offset the anchor from the height of the header */
+
 a.anchor-fix {
     display: block;
     position: relative;
@@ -248,20 +264,16 @@ a.anchor-fix {
     #nav-bar {
         width: auto;
     }
-
     #nav-bar>ul {
         flex-direction: column;
         text-align: center;
     }
-
     #nav-bar li {
         padding: 0;
     }
-
     .features-column-1 {
         display: none;
     }
-
     .features-column-2 {
         padding-left: 0;
         margin: 0 2%;
